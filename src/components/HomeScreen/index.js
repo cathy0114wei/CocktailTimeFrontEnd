@@ -1,6 +1,6 @@
 import React from 'react'
-//import {Link} from "react-router-dom";
 import "./home-screen.css";
+import NavigationBar from "../NavigationBar";
 
 
 const HomeScreen = () => {
@@ -10,8 +10,16 @@ const HomeScreen = () => {
             <div className="container-fluid">
                 <div className="row img-ys">
                     <div className="col-6">
-                        <h1 className="home-text-1 homeScreen-title">Gorgeous Cocktail</h1>
-                        <h3 className="home-text-2 homeScreen-subTitle">Find your favorite cocktail!</h3>
+                        <div className="row">
+                            <div className='col-2'>
+                                <NavigationBar />
+                            </div>
+                            <div className='col-10'>
+                                <h1 className="home-text-1 homeScreen-title">Gorgeous Cocktail</h1>
+                                <h3 className="home-text-2 homeScreen-subTitle">Find your favorite cocktail!</h3>
+                            </div>
+                        </div>
+
                     </div>
                     <div className="col-6">
                         <div>
@@ -39,4 +47,4 @@ const HomeScreen = () => {
         </div>
     )
 }
-export default HomeScreen
+export default HomeScreen;

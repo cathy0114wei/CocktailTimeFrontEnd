@@ -1,0 +1,19 @@
+.about-cheer{
+    position: relative;
+    top: 100px;
+    left: 200px;
+    /*font-size: x-large;*/
+}
+
+.about-text{
+    font-family: "Malayalam MN", monospace;
+    color: darkgray;
+}
+
+.about-builders{
+    font-size: large;
+    position: relative;
+    top: 200px;
+    left: 200px;
+    /*font-size: x-large;*/
+}
