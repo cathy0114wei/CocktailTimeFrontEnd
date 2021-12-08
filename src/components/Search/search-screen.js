@@ -23,7 +23,7 @@ const SearchScreen = () => {
             })
     }
     return (
-
+        <> </>
     )
 }
-export default SearchScreen
+export default SearchScreen;

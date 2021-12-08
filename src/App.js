@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import HomeScreen from "./components/HomeScreen";
 import AboutUs from "./components/AboutUs";
+import SearchScreen from "./components/Search/search-screen";
 
 function App() {
     return (
@@ -15,6 +16,10 @@ function App() {
 
                     <Route path="/about" exact = {true}>
                         <AboutUs/>
+                    </Route>
+
+                    <Route path={["/search", "/search/:cocktailName"]} exact = {true}>
+                        <SearchScreen/>
                     </Route>
                 </Switch>
             </BrowserRouter>
