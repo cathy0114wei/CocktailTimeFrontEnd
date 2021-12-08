@@ -1,0 +1,22 @@
+.cocktail-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.cocktail-title {
+    font-family: "Malayalam MN", monospace;
+    font-weight: bold;
+    font-style: inherit;
+    font-size: 2.5rem;
+    overflow: hidden;
+}
+
+.category-title {
+    font-family: "Malayalam MN", monospace;
+    font-weight: bold;
+    font-style: inherit;
+    font-size: 1.5rem;
+    overflow: hidden;
+}

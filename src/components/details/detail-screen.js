@@ -10,7 +10,7 @@ const DetailsScreen = () => {
 
     return (
 
-        <div className="container-fluid top-margin bottom-margin">
+        <div className="mt-2 mb-5">
             <div className="row">
                 <div className="col-sm-2"/>
                 <div className="col-sm-8">
@@ -19,19 +19,19 @@ const DetailsScreen = () => {
                         Back
                     </button>
                     <br/>
-                    <h2 className="separation-padding cocktail-title">
+                    <h2 className="pt-3 cocktail-title">
                         {cocktailName}
                     </h2>
 
                     <br/>
-                    <div className="text-center description-image">
+                    <div className="text-center cocktail-image">
                         <img src={cocktailImg}
                              width={500}/>
                     </div>
                     <br/>
 
                     <div>
-                        <h5 className="separation-padding section-title">
+                        <h5 className="pt-3 category-title">
                             Category
                         </h5>
                         <p>
@@ -40,7 +40,7 @@ const DetailsScreen = () => {
                     </div>
 
                     <div>
-                        <h5 className="section-title">Glass Type</h5>
+                        <h5 className="category-title">Glass Type</h5>
                         <p>
                             {cocktail.drinks && cocktail.drinks[0] && cocktail.drinks[0].strGlass}
                         </p>
