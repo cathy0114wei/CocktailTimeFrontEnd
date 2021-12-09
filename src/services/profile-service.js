@@ -15,4 +15,8 @@ export const findProfile = () =>
                 return undefined;
             }
         });
-
+export const findProfileById = (userId) =>
+    fetch(`${USER_URL}/profiles/${userId}`, {
+        credentials: 'include',
+    })
+        .then(response => response.json());
