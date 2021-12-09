@@ -70,6 +70,18 @@ const Login = ({user, setUser}) =>{
                                 </div>
                             </div>
 
+                            <div className="form-group row">
+                                <label htmlFor="password" className="col-sm-2 col-form-label">
+                                    Password </label>
+                                <div className="col-sm-10">
+                                    <input
+                                        value={credentials.password}
+                                        onChange={(e) => {setCredentials({...credentials, password: e.target.value})}}
+                                        type="password"
+                                        className="form-control"
+                                        placeholder="password"></input>
+                                </div>
+                            </div>
 
 
 
