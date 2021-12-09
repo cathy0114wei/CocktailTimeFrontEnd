@@ -23,7 +23,49 @@ const SearchScreen = () => {
             })
     }
     return (
-        <> </>
+        <div className="container-fluid search-top-margin search-bottom-margin">
+            <div className="row">
+                <div className="col-sm-2"/>
+                <div className="col-sm-8">
+                    <div>
+                        <h2 className="rose-red"> Search Cocktail </h2>
+                        <input value={searchCocktail}
+                               onChange={(event) => {
+                                   setSearchCocktail(event.target.value)
+                               }}
+                               placeholder="Enter your search here."
+                               className = "form-control"/>
+                        <button
+                            onClick={() => {
+                                findCocktailByName(searchCocktail)
+                            }}
+                            className = "btn btn-primary btn-block">
+                            Search
+                        </button>
+                    </div>
+
+                    <ul className="list-group">
+                        {
+                            results && results.drinks && results.drinks.map((cocktail) => {
+                                //console.log(cocktail.idDrink)
+                                return(
+                                    <li className="list-group-item">
+                                        <Link to={`/details/${cocktail.idDrink}`}>
+                                            <div>
+                                                {cocktail.strDrink}
+                                                <img className="float-right" src={cocktail.strDrinkThumb} width={50}/>
+                                            </div>
+
+                                        </Link>
+                                    </li>
+                                )
+                            })
+                        }
+                    </ul>
+                </div>
+                <div className="col-sm-2"/>
+            </div>
+        </div>
     )
 }
-export default SearchScreen;
+export default SearchScreen
