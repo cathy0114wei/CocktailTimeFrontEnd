@@ -98,7 +98,7 @@ const Profile = ({user, setUser}) => {
                 </>
             }
         </Fragment>
-    )
+
     )
 }
 export default Profile;
