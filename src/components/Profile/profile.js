@@ -3,8 +3,8 @@ import ProfileBio from "./profile-bio";
 import ProfileAbout from "./profile-about";
 import ProfileFavorite from "./profile-favorite";
 import ProfileReview from "./profile-review";
-import {findProfileById} from "../../services/profile-service";
-import {Link, useParams} from "react-router-dom";
+import profileService from "../../services/profile-service";
+import {useParams, Link} from "react-router-dom";
 
 const Profile = ({user, setUser}) => {
 
@@ -12,7 +12,10 @@ const Profile = ({user, setUser}) => {
     const [profileType, setProfileType] = useState("About");
     const [currentProfile, setCurrentProfile] = useState({});
 
-
+    const saveProfile = (user) => {
+        profileService.updateProfile(user)
+            .then(res => console.log(res))
+    }
 
     const isAdmin = user && user.role === "ADMIN";
     const adminId = isAdmin && user._id;
@@ -27,6 +30,7 @@ const Profile = ({user, setUser}) => {
                 })
         }
     }, [uid])
+
     return (
         <Fragment>
             <h1 className='rose-red'>Profile </h1>
@@ -98,7 +102,6 @@ const Profile = ({user, setUser}) => {
                 </>
             }
         </Fragment>
-
     )
 }
 export default Profile;
