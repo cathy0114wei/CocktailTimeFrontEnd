@@ -6,12 +6,6 @@ export const findReviewsForCocktail = (cocktailId) =>
     })
         .then(response => response.json())
 
-// export const findUserById = (uid) =>
-//     fetch(`${REVIEW_URL}/${cocktailId}`, {
-//         credentials: 'include'
-//     })
-//         .then(response => response.json())
-
 export const createReviewForCocktail = (cocktailId, textArea, username, cocktailName, cocktailImg, userId) => {
     return fetch(`${REVIEW_URL}/${cocktailId}`, {
         method: "POST",
