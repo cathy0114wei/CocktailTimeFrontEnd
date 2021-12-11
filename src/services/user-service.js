@@ -13,7 +13,7 @@ export const register = (credentials) => {
         .then(response => response.json())
 }
 
-/*const login = (credentials) => {
+const login = (credentials) => {
     return fetch(`${REGISTER_URL}/login`, {
         method: "POST",
         credentials: "include",
@@ -30,7 +30,7 @@ export const logout = () => {
         method: 'POST',
         credentials: 'include'
     });
-}*/
+}
 
 export default {
     register, login, logout
