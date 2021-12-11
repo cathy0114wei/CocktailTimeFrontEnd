@@ -15,8 +15,33 @@ export const findProfile = () =>
                 return undefined;
             }
         });
+
 export const findProfileById = (userId) =>
     fetch(`${USER_URL}/profiles/${userId}`, {
         credentials: 'include',
+    })
+        .then(response => response.json());
+
+export const findProfileByUsername = (username) =>
+    fetch(`${USER_URL}/profiles/username/${username}`, {
+        credentials: 'include',
+    })
+        .then(response => response.json());
+
+export const deleteProfile = (userId) =>
+    fetch(`${USER_URL}/profiles/${userId}`, {
+        method: "DELETE",
+        credentials: 'include',
+    })
+        .then(response => response.json());
+
+export const updateProfile = (profile) =>
+    fetch(`${USER_URL}/profile`, {
+        method: "PUT",
+        credentials: 'include',
+        body: JSON.stringify(profile),
+        headers: {
+            'content-type': 'application/json'
+        }
     })
         .then(response => response.json());

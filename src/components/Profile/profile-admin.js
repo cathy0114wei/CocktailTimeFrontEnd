@@ -1,8 +1,24 @@
 import React, {useState, useEffect} from 'react'
-
+import {findAllProfiles, deleteProfile} from "../../services/profile-service";
 import {Link} from "react-router-dom";
 
 const ProfileAdmin = () => {
+    const [profiles, setProfiles] = useState();
+
+    useEffect(() => {
+        findAllProfiles()
+            .then((profiles) => {
+                setProfiles(profiles)
+            })
+    }, [])
+
+
+    const handleDelete = (e) => {
+        console.log(e.target.id)
+        deleteProfile(e.target.id)
+            .then(res => console.log(res))
+        setProfiles(profiles.filter(item => item._id !== e.target.id))
+    }
 
     return (
         <>
@@ -48,3 +64,5 @@ const ProfileAdmin = () => {
         </>
     )
 }
+
+export default ProfileAdmin;
