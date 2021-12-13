@@ -28,11 +28,11 @@ export const removeFavorite = (cocktailId, userId) =>
     })
         .then(res => res.json());
 
-const api = {
+const favoriteService = {
     isFavorite,
     findFavoritesByUserId,
     addFavorite,
     removeFavorite
 }
 
-export default api;
+export default favoriteService;

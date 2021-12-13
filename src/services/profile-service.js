@@ -45,3 +45,9 @@ export const updateProfile = (profile) =>
         }
     })
         .then(response => response.json());
+
+const profileService = {
+    findAllProfiles, findProfile, findProfileById, findProfileByUsername, deleteProfile, updateProfile
+}
+
+export default profileService;

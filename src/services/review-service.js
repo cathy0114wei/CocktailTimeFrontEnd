@@ -47,8 +47,8 @@ export const findReviewsByUsername = (username) =>
         .then(response => response.json())
 
 
-const api = {
+const reviewService = {
     findReviewsForCocktail, createReviewForCocktail, deleteReview, updateReview, findReviewsByUsername
 }
 
-export default api;
+export default reviewService;
