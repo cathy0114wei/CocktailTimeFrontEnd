@@ -2,11 +2,13 @@
     font-family: Helvetica, fantasy;
     font-weight: bold;
     font-size: 3rem;
-    color: white!important;
+    color: rgba(133,88,88)!important;
     margin-bottom: 1rem;
-    margin-left: 8px;
+    margin-left: 350px;
 }
-
+.words-part1{
+    padding-right: 5rem;
+}
 .homeScreen-title {
     font-family: "Malayalam MN", monospace;
     font-weight: normal;
@@ -40,6 +42,9 @@
 .second-paragraph{
     margin-top: auto;
     margin-bottom: 18%;
+    text-align: center;
+    position: relative;
+    top: 30px;
 }
 
 .home-text-1{
