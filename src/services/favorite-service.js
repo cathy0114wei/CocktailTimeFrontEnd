@@ -1,4 +1,6 @@
+
 const USER_URL = "http://localhost:3001/api";
+
 
 export const isFavorite = (cocktailId, userId) =>
     fetch(`${USER_URL}/favorite/${cocktailId}/${userId}`)
@@ -28,11 +30,17 @@ export const removeFavorite = (cocktailId, userId) =>
     })
         .then(res => res.json());
 
+export const findAllFavorites = () =>
+    fetch(`${USER_URL}/favorite`)
+        .then((response) => response.json());
+
+
 const favoriteService = {
     isFavorite,
     findFavoritesByUserId,
     addFavorite,
-    removeFavorite
+    removeFavorite,
+    findAllFavorites
 }
 
 export default favoriteService;
