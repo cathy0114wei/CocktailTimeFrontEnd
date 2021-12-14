@@ -4,26 +4,14 @@ import "./index.css";
 const AboutUs = () => {
     return (
         <Fragment>
-            <h2 className="about-text ms-5">
-                We are four women web builders.
-            </h2>
-            <h3 className={"about-text ms-5 mt-5"}>
-                Something we all have in common?
-            </h3>
-            <h3 className={"about-text ms-5 mt-5"}>
-            That we would like to reward ourselves with
-                <span className="rose-red"> a glass of cocktail</span> after building a long day.
-            </h3>
+            <p>
+                The Cocktail Time is a destination where every cocktail enthusiast can explore our curated collection of incredible cocktails and learn how to make them. Try a new spirit or put your own unique spin on one of the hundreds of drinks you find. Discover the art of cocktails by learning a new technique “Behind the Bar,” or just let the stunning, colorful drink images inspire your next big occasion or casual evening at home. Search hundreds of recipes for every spirit type, from sweet Tequila to smoky Bourbon. There’s something for everyone, from Margaritas to Martinis, party punches to seasonal favorites, old-fashioned classics to the latest mixologist concoctions.
+            </p>
 
-            <h1 className="about-text about-cheer"> Let's cheers.</h1>
+            <p>
+                Register for free and save your favorite recipes, or create a shopping list for your next event. While you’re here, share your cocktail picks with your friends & fellow cocktail lovers. Keep coming back to see the latest additions to our growing list of recipes and new bartending tips. We promise you’ll find an amazing cocktail every time you visit.
+            </p>
 
-            <ul className="about-text about-builders">
-                <li>Builder 1: Xuening Wei</li>
-                <li>Builder 2: Luming Yang</li>
-                <li>Builder 3: Sheng Liu</li>
-                <li>Builder 4: Shuwei Wang</li>
-
-            </ul>
         </Fragment>
 
     );
