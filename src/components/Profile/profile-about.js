@@ -21,7 +21,7 @@ const ProfileAbout = ({user, setUser, saveProfile, editable, currentProfile}) =>
                     {
                         !editing &&
                         <div className="about-block">
-                            <i onClick={() => setEditing(true)} className="fa fa-edit" style={{color:"blue"}}></i>
+                            <i onClick={() => setEditing(true)} className="fa fa-edit"></i>
                             <p className="text-justify">{user.about}</p>
                         </div>
                     }

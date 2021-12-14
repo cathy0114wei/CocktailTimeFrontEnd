@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react'
-import {findAllProfiles, deleteProfile} from "../../services/profile-service";
+import profileService from "../../services/profile-service";
 import {Link} from "react-router-dom";
 
 const ProfileAdmin = () => {
     const [profiles, setProfiles] = useState();
 
     useEffect(() => {
-        findAllProfiles()
+        profileService.findAllProfiles()
             .then((profiles) => {
                 setProfiles(profiles)
             })
@@ -15,7 +15,7 @@ const ProfileAdmin = () => {
 
     const handleDelete = (e) => {
         console.log(e.target.id)
-        deleteProfile(e.target.id)
+        profileService.deleteProfile(e.target.id)
             .then(res => console.log(res))
         setProfiles(profiles.filter(item => item._id !== e.target.id))
     }
@@ -25,7 +25,6 @@ const ProfileAdmin = () => {
             <h3>Admin Panel</h3>
             <Link className="btn btn-primary" to="/profile" style={{margin:"10px"}}>
                 Back to my profile</Link>
-            {/*{JSON.stringify(profiles)}*/}
             <table className="table admin-table">
                 <thead>
                 <tr>

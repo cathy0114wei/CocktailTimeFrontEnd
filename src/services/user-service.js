@@ -1,6 +1,5 @@
 const REGISTER_URL = "http://localhost:3001/api";
 
-
 export const register = (credentials) => {
     return fetch(`${REGISTER_URL}/register`, {
         method: 'POST',
@@ -34,5 +33,4 @@ export const logout = () => {
 
 export default {
     register, login, logout
-
 }
