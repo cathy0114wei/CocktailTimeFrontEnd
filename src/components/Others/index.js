@@ -27,7 +27,6 @@ const Others = ({user}) => {
                         <table className="table admin-table">
                             <thead>
                             <tr>
-                                {/*<th scope="col">User Id</th>*/}
                                 <th scope="col">User (Click to view)</th>
                                 <th scope="col">First Name</th>
                                 <th scope="col">Last Name</th>

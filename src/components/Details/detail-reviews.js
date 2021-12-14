@@ -82,4 +82,4 @@ const ReviewList = ({cocktailId, user, cocktailName, cocktailImg}) => {
         </div>
     )
 }
-export default ReviewList
+export default ReviewList;
