@@ -1,6 +1,6 @@
 import React from 'react'
 import "./home-screen.css";
-import NavigationBar from "./NavigationBar";
+import NavigationBar from "../NavigationBar";
 // import FavoriteList from "./FavoriteList/FavoriteList";
 
 
