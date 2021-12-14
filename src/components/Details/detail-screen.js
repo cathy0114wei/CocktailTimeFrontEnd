@@ -114,15 +114,15 @@ const DetailsScreen = ({user, setUser}) => {
                     <div>
                         <IngredientDetail/>
                     </div>
-                    <div>
-                        <a
-                            href={
-                                cocktail.drinks && cocktail.drinks[0] && cocktail.drinks[0].strImageSource
-                            }
-                            target="_blank">
-                            Download Image Here!
-                        </a>
-                    </div>
+                    {/*<div>*/}
+                    {/*    <a*/}
+                    {/*        href={*/}
+                    {/*            cocktail.drinks && cocktail.drinks[0] && cocktail.drinks[0].strImageSource*/}
+                    {/*        }*/}
+                    {/*        target="_blank">*/}
+                    {/*        Download Image Here!*/}
+                    {/*    </a>*/}
+                    {/*</div>*/}
 
                     <div className="separation-padding">
                         <ReviewList cocktailId={cocktailId} user={user} setUser={setUser} cocktailName={cocktailName} cocktailImg={cocktailImg}/>
