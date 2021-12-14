@@ -5,7 +5,7 @@ import HomeScreen from "./components/HomeScreen/home-screen";
 import {BrowserRouter, Link, Switch, Route} from "react-router-dom";
 import Profile from "./components/profile/profile";
 import ProfileAdmin from "./components/profile/profile-admin";
-import DetailsScreen from "./components/details/detail-screen";
+import DetailsScreen from "./components/Details/detail-screen";
 import Login from "./components/user/login";
 import Privacy from "./components/PrivacyPolicy/privacy"
 import Register from "./components/user/register";
