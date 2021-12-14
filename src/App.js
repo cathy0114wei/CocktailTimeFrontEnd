@@ -1,7 +1,7 @@
 import './App.css';
-import '../src/components/home-screen.css';
+import './components/HomeScreen/home-screen.css';
 import SearchScreen from "./components/search/search-screen";
-import HomeScreen from "./components/home-screen";
+import HomeScreen from "./components/HomeScreen/home-screen";
 import {BrowserRouter, Link, Switch, Route} from "react-router-dom";
 import Profile from "./components/profile/profile";
 import ProfileAdmin from "./components/profile/profile-admin";

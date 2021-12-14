@@ -1,5 +1,3 @@
-import {logout} from "./user-service";
-
 const USER_URL = "http://localhost:3001/api";
 
 export const isFavorite = (cocktailId, userId) =>

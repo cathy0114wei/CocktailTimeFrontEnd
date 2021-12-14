@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from "react-router-dom";
 import "./home-screen.css";
-import NavigationBar from "./NavigationBar";
+import NavigationBar from "../NavigationBar";
 
 
 const HomeScreen = () => {

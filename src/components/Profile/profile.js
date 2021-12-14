@@ -1,15 +1,18 @@
-import React, {useState, useEffect, Fragment} from 'react';
+import React, {useState, useEffect} from 'react';
 import ProfileBio from "./profile-bio";
 import ProfileAbout from "./profile-about";
 import ProfileFavorite from "./profile-favorite";
 import ProfileReview from "./profile-review";
 import profileService from "../../services/profile-service";
 import {useParams, Link} from "react-router-dom";
+import "./profile.css";
+
+
 
 const Profile = ({user, setUser}) => {
 
     const {uid} = useParams();
-    const [profileType, setProfileType] = useState("About");
+    const [profileType, setProfileType] = useState("About me");
     const [currentProfile, setCurrentProfile] = useState({});
 
     const saveProfile = (user) => {
@@ -32,7 +35,7 @@ const Profile = ({user, setUser}) => {
     }, [uid])
 
     return (
-        <Fragment>
+        <>
             <h1 className='rose-red'>Profile </h1>
             {
                 isAdmin && <Link className="btn btn-primary" to="/profiles" style={{margin:"10px"}}>
@@ -41,8 +44,8 @@ const Profile = ({user, setUser}) => {
             }
             {!user && !uid &&
             <>
-                <div className='alert alert-warning'>
-                    Not logged in
+                <div className='alert alert-light'>
+                    Please log in first
                 </div>
                 <Link className='btn btn-outline-primary' to='/login'>Back to login page</Link>
             </>
@@ -71,14 +74,6 @@ const Profile = ({user, setUser}) => {
                             </div>
 
                             <div className="col-md-8">
-                                {
-                                    editable &&
-                                    <h2 className="rose-red">{user.firstName} {user.lastName}'s Profile</h2>
-                                }
-                                {
-                                    !editable &&
-                                    <h2>{currentProfile.firstName} {currentProfile.lastName}'s Profile</h2>
-                                }
                                 <div className="row">
                                     <div className="col-md-8">
                                         {
@@ -101,7 +96,9 @@ const Profile = ({user, setUser}) => {
                     </div>
                 </>
             }
-        </Fragment>
+        </>
     )
 }
+
 export default Profile;
+

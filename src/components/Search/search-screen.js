@@ -39,7 +39,7 @@ const SearchScreen = () => {
                             onClick={() => {
                                 findCocktailByName(searchCocktail)
                             }}
-                            className = "btn btn-primary btn-block">
+                            className = "btn btn-primary btn-block button-search">
                             Search
                         </button>
                     </div>
@@ -47,7 +47,6 @@ const SearchScreen = () => {
                     <ul className="list-group">
                         {
                             results && results.drinks && results.drinks.map((cocktail) => {
-                                //console.log(cocktail.idDrink)
                                 return(
                                     <li className="list-group-item">
                                         <Link to={`/details/${cocktail.idDrink}`}>

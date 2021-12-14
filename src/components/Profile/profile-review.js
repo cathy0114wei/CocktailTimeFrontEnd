@@ -18,12 +18,7 @@ const ProfileReview = ({user, editable, currentProfile}) => {
         }
     }, [])
 
-    const handleDelete = (e, cocktailId) => {
-        console.log(cocktailId);
-        reviewService.deleteReview(cocktailId, e.target.id)
-            .then(res => console.log(res))
-        setReviews(reviews.filter(review => review._id !== e.target.id))
-    }
+    console.log(editable);
 
     return (
         <Fragment>
@@ -36,6 +31,8 @@ const ProfileReview = ({user, editable, currentProfile}) => {
                             <i  id={review._id} className="fa fa-trash"
                                 style={{color:"red", marginRight:"5px"}}
                                 onClick={() => {
+                                    console.log(review.cocktailId);
+                                    console.log(review._id);
                                     reviewService.deleteReview(review.cocktailId, review._id);
                                     setReviews(reviews.filter(item => item._id !== review._id))}
                                 }/>
