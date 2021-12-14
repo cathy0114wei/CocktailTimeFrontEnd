@@ -46,12 +46,12 @@ const ProfileBio = ({user, setUser, saveProfile, editable, currentProfile}) => {
                 !editable &&
                 <>
                     <img src={currentProfile.avatar} width="200"/>
-                    <p>{currentProfile.firstName} {currentProfile.lastName}</p>
+                    <p>Name: {currentProfile.firstName} {currentProfile.lastName}</p>
                     <div className="bio-block">
                         <ul className="list-group">
-                            <li className="list-group-item ">{currentProfile.phone}</li>
-                            <li className="list-group-item">{currentProfile.email}</li>
-                            <li className="list-group-item">{currentProfile.address}</li>
+                            {/*<li className="list-group-item ">{currentProfile.phone}</li>*/}
+                            <li className="list-group-item">Email: {currentProfile.email}</li>
+                            {/*<li className="list-group-item">{currentProfile.address}</li>*/}
                         </ul>
                     </div>
                 </>

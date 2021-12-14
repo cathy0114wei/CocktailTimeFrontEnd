@@ -13,24 +13,6 @@
 .words-part1{
     padding-right: 5rem;
 }
-.homeScreen-title {
-    font-family: "Malayalam MN", monospace;
-    font-weight: normal;
-    font-size: 2.5rem;
-    color: rgba(133,88,88)!important;
-
-}
-.homeScreen-cocktail {
-    font-weight: bold;
-    font-size: 4rem;
-}
-
-.homeScreen-subTitle {
-    font-family: "Malayalam MN", cursive;
-    font-weight: lighter;
-    font-size: 1.3rem;
-    color: antiquewhite;
-}
 
 .second-img{
     width: 100%;

@@ -37,11 +37,13 @@ const Profile = ({user, setUser}) => {
     return (
         <>
             <h1 className='rose-red'>Profile </h1>
+            {/*如果是admin, 会有一个 admin panel按钮*/}
             {
                 isAdmin && <Link className="btn btn-primary" to="/profiles" style={{margin:"10px"}}>
                     Admin Panel to manage users!
                 </Link>
             }
+
             {!user && !uid &&
             <>
                 <div className='alert alert-light'>
