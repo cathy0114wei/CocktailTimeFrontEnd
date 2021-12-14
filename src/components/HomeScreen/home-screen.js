@@ -1,7 +1,7 @@
 import React from 'react'
-import {Link} from "react-router-dom";
 import "./home-screen.css";
-import NavigationBar from "../NavigationBar";
+import NavigationBar from "./NavigationBar";
+// import FavoriteList from "./FavoriteList/FavoriteList";
 
 
 const HomeScreen = () => {
@@ -9,12 +9,12 @@ const HomeScreen = () => {
     return (
         <div>
             <div className="container-fluid">
-                <div className="d-block d-sm-none fa-2x">XS</div>
+                {/*<div className="d-block d-sm-none fa-2x">XS</div>
                 <div className="d-none d-sm-block d-md-none fa-2x">S</div>
                 <div className="d-none d-md-block d-lg-none fa-2x">M</div>
                 <div className="d-none d-lg-block d-xl-none fa-2x">L</div>
                 <div className="d-none d-xl-block d-xxl-none fa-2x">XL</div>
-                <div className="d-none d-xxl-block fa-2x">XXL</div>
+                <div className="d-none d-xxl-block fa-2x">XXL</div>*/}
                 <div className="row img-ys">
                     <div className="col-2 col-xs-2">
                         <NavigationBar />
@@ -46,7 +46,7 @@ const HomeScreen = () => {
                         </div>
                     </div>
                     <div className="col-5 d-none d-md-block">
-                        <h1 className="homeScreen-title">BEYOND THE GLASS</h1>
+                        <h1 className="homeScreen-title ms-5">BEYOND THE GLASS</h1>
                         <p className="homeScreen-subTitle">Whatever the scenario, whatever the vibe, whatever our tastes are, there’s a drink for that.</p>
                         <p className="homeScreen-subTitle">Make a cocktail for you and your beloved.</p>
                     </div>
