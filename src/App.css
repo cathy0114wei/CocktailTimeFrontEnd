@@ -5,6 +5,25 @@
   width: 100%;
 }
 
+.homeScreen-title {
+  font-family: "Malayalam MN", monospace;
+  font-weight: normal;
+  font-size: 2.5rem;
+  color: rgba(133,88,88)!important;
+
+}
+.homeScreen-cocktail {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.homeScreen-subTitle {
+  font-family: "Malayalam MN", cursive;
+  font-weight: lighter;
+  font-size: 1.3rem;
+  color: antiquewhite;
+}
+
 .homeScreen-first-link {
   position: relative;
   right:20px;
@@ -104,5 +123,12 @@ a {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 0px) and (max-width: 425px) {
+  .homeScreen-cocktail {
+    font-weight: bold;
+    font-size: 2rem;
   }
 }
