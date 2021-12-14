@@ -5,13 +5,7 @@ import registerService from "../../services/user-service"
 
 
 const Register = ({user}) => {
-    /*
-    const [firstName, setFirstName] = useState("")
-    const [lastName, setLastName] = useState("")
-    const [address, setAddress] = useState("")
-    const [email, setEmail] = useState("")
-    const [phone, setPhone] = useState("")
-     */
+
     const history = useHistory()
     const [credentials, setCredentials] = useState({
         username: '',

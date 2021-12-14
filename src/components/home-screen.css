@@ -1,12 +1,25 @@
+@media (max-width: 576px){
+    .first-img-border {
+        margin-left: 85px;
+    }
+    .img-fluid {
+        width: 100%!important;
+        height: 100%!important;
+        margin-top: 80px;
+    }
+}
+
 .homeScreen-cocktail {
     font-family: Helvetica, fantasy;
     font-weight: bold;
     font-size: 3rem;
-    color: white!important;
+    color: rgba(133,88,88)!important;
     margin-bottom: 1rem;
-    margin-left: 8px;
+    /*margin-left: 350px;*/
 }
-
+.words-part1{
+    padding-right: 5rem;
+}
 .homeScreen-title {
     font-family: "Malayalam MN", monospace;
     font-weight: normal;
@@ -21,25 +34,31 @@
     color: antiquewhite;
 }
 
-.img-fluid{
-    width: 70%;
-    height: 70%;
-    border-radius: 20px;
-    box-shadow:0 0 30px 10px rgba(133, 88, 88, 0.7);
-}
-
 .second-img{
-    width: 70%;
-    height: 70%;
-    margin-left: 20%;
+    width: 100%;
+    height:100%;
+    /*margin-left: 130px;*/
+    /*margin-left: 20%;*/
     margin-bottom: 10%;
     border-radius: 20px;
     box-shadow:0 0 30px 10px rgba(133, 88, 88, 0.7);
 }
 
+.img-fluid {
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 10px rgba(133, 88, 88, 0.7);
+}
+
+
+
 .second-paragraph{
     margin-top: auto;
     margin-bottom: 18%;
+    text-align: center;
+    position: relative;
+    top: 30px;
 }
 
 .home-text-1{
@@ -60,6 +79,8 @@
 }
 .img-ys2{
     margin-top: 130px;
+    /*width: 500px;*/
+    /*length:500px;*/
 }
 
 

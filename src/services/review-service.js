@@ -6,6 +6,7 @@ export const findReviewsForCocktail = (cocktailId) =>
     })
         .then(response => response.json())
 
+
 export const createReviewForCocktail = (cocktailId, textArea, username, cocktailName, cocktailImg, userId) => {
     return fetch(`${REVIEW_URL}/${cocktailId}`, {
         method: "POST",
@@ -47,8 +48,8 @@ export const findReviewsByUsername = (username) =>
         .then(response => response.json())
 
 
-const reviewService = {
+const api = {
     findReviewsForCocktail, createReviewForCocktail, deleteReview, updateReview, findReviewsByUsername
 }
 
-export default reviewService;
+export default api;
