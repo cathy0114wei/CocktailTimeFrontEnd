@@ -1,5 +1,4 @@
 const USER_URL = "http://localhost:3001/api";
-
 export const findAllProfiles = () =>
     fetch(`${USER_URL}/profiles`)
         .then(res => res.json());
@@ -46,8 +45,8 @@ export const updateProfile = (profile) =>
     })
         .then(response => response.json());
 
-const profileService = {
+const api = {
     findAllProfiles, findProfile, findProfileById, findProfileByUsername, deleteProfile, updateProfile
 }
 
-export default profileService;
+export default api;

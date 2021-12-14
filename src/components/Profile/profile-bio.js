@@ -29,7 +29,7 @@ const ProfileBio = ({user, setUser, saveProfile, editable, currentProfile}) => {
                         !editing &&
                         <>
                             <div className="bio-block">
-                                <i onClick={() => setEditing(true)} className="fa fa-edit" style={{color:"blue"}}></i>
+                                <i onClick={() => setEditing(true)} className="fa fa-edit"></i>
                                 <ul className="list-group">
                                     <li className="list-group-item rose-red">Password: {user.password}</li>
                                     <li className="list-group-item rose-red">Phone: {user.phone}</li>

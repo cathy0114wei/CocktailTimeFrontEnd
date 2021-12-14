@@ -84,7 +84,7 @@ const DetailsScreen = ({user, setUser}) => {
                         </div>
                     </div>
                     <br/>
-                    <div className="text-center dscp-img">
+                    <div className="text-center description-image">
 
                         <img src={cocktailImg}
                              width={500}/>
