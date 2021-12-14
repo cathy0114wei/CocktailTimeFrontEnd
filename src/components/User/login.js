@@ -5,8 +5,7 @@ import userService from "../../services/user-service";
 
 const Login = ({user, setUser}) =>{
     const [credentials, setCredentials] = useState({username: '', password: ''})
-    //const [username, setUsername] = useState('');
-    //const [password, setPassword] = useState('');
+
     const history = useHistory();
     const [check, setCheck] = useState("");
 
@@ -15,7 +14,7 @@ const Login = ({user, setUser}) =>{
             .then((user) => {
                 console.log(user)
                 if(user === 0) {
-                    //alert("Login failed, please try again")
+
                     setCheck("check")
                 } else {
                     setUser(user)
@@ -27,13 +26,13 @@ const Login = ({user, setUser}) =>{
     return(
         <div>
             <div className="container">
-                <h1>
+                <h1 className="rose-red">
                     Log In
                 </h1>
                 {
                     user &&
                     <>
-                        <div className='alert alert-info'>
+                        <div className='alert alert-info rose-red'>
                             You're already logged in
                         </div>
                         <button className='btn btn-outline-secondary'
@@ -51,7 +50,7 @@ const Login = ({user, setUser}) =>{
                                 {
                                     check === "check" &&
                                     <>
-                                        <div className='alert alert-warning'>
+                                        <div className='alert alert-warning rose-red'>
                                             Please check your username and password again.
                                         </div>
                                     </>
