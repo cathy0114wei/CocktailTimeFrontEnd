@@ -1,14 +1,15 @@
 /*h2{*/
 /*    color: indianred;*/
 /*}*/
-h2{
+h1{
     color: indianred;
+    font-weight:bold;
 }
 h3{
-    color: darkgray;
+    color: indianred;
 }
 h4{
-    color: darkgray;
+    color: lightgrey;
 }
 h5{
     color: darkgray;

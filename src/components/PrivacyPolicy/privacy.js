@@ -3,9 +3,9 @@ import "./privacy.css"
 const Privacy = () => {
     return (
         <>
-            <h2>Privacy Policy</h2>
+            <h1>Privacy Policy</h1>
             <p>Last updated: December 13, 2021</p>
-            <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your
+            <p>This Privacy Policy describes CockTail Time policies and procedures on the collection, use and disclosure of Your
                 information when You use the Service and tells You about Your privacy rights and how the law protects
                 You.</p>
             <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the
@@ -13,7 +13,6 @@ const Privacy = () => {
 
             <h3>Collecting and Using Your Personal Data</h3>
             <h4>Types of Data Collected</h4>
-            <h5>Personal Data</h5>
             <p>While using Our Service, We may ask You to provide Us with certain personally identifiable information
                 that
                 can be used to contact or identify You. Personally identifiable information may include, but is not
@@ -33,11 +32,10 @@ const Privacy = () => {
                     <p>Address</p>
                 </li>
                 <li>
-                    <p>Usage Data</p>
+                    <p>Usage Data*</p>
                 </li>
             </ul>
-            <h5>Usage Data</h5>
-            <p>Usage Data is collected automatically when using the Service.</p>
+            <p>*Usage Data is collected automatically when using the Service.</p>
             <p>Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address),
                 browser
                 type, browser version, the pages of our Service that You visit, the time and date of Your visit, the
