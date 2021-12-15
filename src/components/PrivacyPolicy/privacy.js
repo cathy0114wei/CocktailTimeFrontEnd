@@ -91,15 +91,7 @@ const Privacy = () => {
                 <li>
                     <p><strong>To manage Your requests:</strong> To attend and manage Your requests to Us.</p>
                 </li>
-                <li>
-                    <p><strong>For business transfers:</strong> We may use Your information to evaluate or conduct a
-                        merger,
-                        divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or
-                        all of
-                        Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar
-                        proceeding,
-                        in which Personal Data held by Us about our Service users is among the assets transferred.</p>
-                </li>
+
                 <li>
                     <p><strong>For other purposes</strong>: We may use Your information for other purposes, such as data
                         analysis, identifying usage trends, determining the effectiveness of our promotional campaigns
@@ -117,9 +109,7 @@ const Privacy = () => {
                 are effective when they are posted on this page.</p>
             <h3>Contact Us</h3>
             <p>If you have any questions about this Privacy Policy, You can contact us:</p>
-            <ul>
-                <li>By email: cocktailTime@webdev.com</li>
-            </ul>
+            <p>By email: cocktailTime@webdev.com</p>
 
         </>)
 }
